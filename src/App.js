@@ -1,33 +1,26 @@
 import React, { Component } from 'react';
 import Hero from './Hero'
 import BlogHeader from './BlogHeader'
+import Menu from './Menu'
 
 class App extends Component {
   render() {
     return (
       <div>
         <Hero />
-        <div className="columns">
-          <div className="column is-one-quarter">
-            <BlogHeader/>
-          </div> 
-          <div className="column">
-            <section className="section">
-              Your Blog goes here
-            </section>
-          </div>
+        <br />
+        <div className="container">
+          <div className="columns">
+            <div className="column is-one-quarter">
+              <Menu />
+            </div> 
+            <div className="column">
+              This is for content
+            </div>
+       </div>
+
         </div>
-        <div className="columns">
-          <div className="column is-one-quarter">
-            <BlogHeader/>
-          </div> 
-          <div className="column">
-            <section className="section">
-              Your Blog goes here and asdfasdfasdfasdfasdfasd asdfasdfasd asdfasdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdfasdf asdfasdf
-            </section>
-          </div>
-        </div>
-      </div>
+             </div>
     );
   }
 }
