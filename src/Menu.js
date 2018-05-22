@@ -15,28 +15,16 @@ class Menu extends Component {
                 <Link to="/tensorflow">Tensorflow.js Tutorial</Link>
             </li>
             <li>
-                <Link to="/customers">Customers</Link>
+                <Link to="/components-vue">Components in Vue</Link>
             </li>
         </ul>
         <p class="menu-label">
-           April 2018 
+            March 2017
         </p>
         <ul class="menu-list">
-            <li><a>Team Settings</a></li>
             <li>
-            <a>Manage Your Team</a>
+                <Link to="/vim">Configuring Vim</Link>
             </li>
-            <li><a>Invitations</a></li>
-            <li><a>Cloud Storage</a></li>
-            <li><a>Authentication</a></li>
-        </ul>
-        <p class="menu-label">
-            March 2018
-        </p>
-        <ul class="menu-list">
-            <li><a>Is Marketing Similar To Medicine</a></li>
-            <li><a>Transfers</a></li>
-            <li><a>Balance</a></li>
         </ul>
         </aside>
         

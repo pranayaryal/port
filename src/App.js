@@ -4,6 +4,7 @@ import BlogHeader from './BlogHeader'
 import Menu from './Menu'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Tensorflow from './Tensorflow'
+import Vim from './Vim'
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
                 </div> 
                 <div className="column">
                     <Route path="/tensorflow" component={Tensorflow}/>
+                    <Route exact={true} path="/vim" component={Vim}/>
                 </div>
               </div>
             </div>
