@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Menu extends Component {
   render() {
@@ -10,8 +11,12 @@ class Menu extends Component {
             May 2018
         </p>
         <ul class="menu-list">
-            <li><a>Using Tensorflow.js</a></li>
-            <li><a>Customers</a></li>
+            <li>
+                <Link to="/tensorflow">Tensorflow.js Tutorial</Link>
+            </li>
+            <li>
+                <Link to="/customers">Customers</Link>
+            </li>
         </ul>
         <p class="menu-label">
            April 2018 

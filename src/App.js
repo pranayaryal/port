@@ -2,25 +2,28 @@ import React, { Component } from 'react';
 import Hero from './Hero'
 import BlogHeader from './BlogHeader'
 import Menu from './Menu'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Tensorflow from './Tensorflow'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Hero />
-        <br />
-        <div className="container">
-          <div className="columns">
-            <div className="column is-one-quarter">
-              <Menu />
-            </div> 
-            <div className="column">
-              This is for content
+        <Router>
+          <div>
+            <Hero />
+            <br />
+            <div className="container">
+              <div className="columns">
+                <div className="column is-one-quarter">
+                  <Menu />
+                </div> 
+                <div className="column">
+                    <Route path="/tensorflow" component={Tensorflow}/>
+                </div>
+              </div>
             </div>
-       </div>
-
-        </div>
-             </div>
+          </div>
+        </Router> 
     );
   }
 }
