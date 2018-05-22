@@ -1,24 +1,32 @@
 import React, { Component } from 'react';
-import Nav from './Nav'
+import Hero from './Hero'
+import BlogHeader from './BlogHeader'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <section className="hero">
-          <div className="hero-body">
-            <div className="container">
-              <h1 className="title">Pranay Aryal</h1>
-              <h2 className="subtitle">Software Developer & Data Scientist</h2>
-            </div> 
+        <Hero />
+        <div className="columns">
+          <div className="column is-one-quarter">
+            <BlogHeader/>
+          </div> 
+          <div className="column">
+            <section className="section">
+              Your Blog goes here
+            </section>
           </div>
-
-        </section>
-        <section className="section">
-            <div className="container">
-              <p>I blog about data science</p>
-            </div> 
-        </section>
+        </div>
+        <div className="columns">
+          <div className="column is-one-quarter">
+            <BlogHeader/>
+          </div> 
+          <div className="column">
+            <section className="section">
+              Your Blog goes here and asdfasdfasdfasdfasdfasd asdfasdfasd asdfasdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdfasdf asdfasdf
+            </section>
+          </div>
+        </div>
       </div>
     );
   }

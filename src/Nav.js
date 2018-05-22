@@ -20,7 +20,7 @@ class App extends Component {
                     <Link className="navbar-item" to={`/about`}>About</Link>
                     <Link className="navbar-item" to={`/contact`}>Contact</Link>
                 </div>
-                <Route path="/home" component={ Home } />
+                <Route exact={true} path="/home" component={ Home } />
 
             </div>
         </Router>
