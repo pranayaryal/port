@@ -2,8 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Nav from './Nav';
 import registerServiceWorker from './registerServiceWorker';
 import 'bulma/css/bulma.min.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+const root = document.getElementById('root');
+ReactDOM.render(
+    <div>
+        <App />
+    </div>,
+    root)
 registerServiceWorker();
