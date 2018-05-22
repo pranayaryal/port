@@ -8,7 +8,7 @@ class App extends Component {
         <section className="hero">
           <div className="hero-body">
             <div className="container">
-              <h1 className="title">Pranay</h1>
+              <h1 className="title">Pranay Aryal</h1>
               <h2 className="subtitle">Software Developer & Data Scientist</h2>
             </div> 
           </div>
