@@ -26,6 +26,21 @@ class Menu extends Component {
                 <Link to="/vim">Configuring Vim</Link>
             </li>
         </ul>
+        <br /><br />
+        <p class="menu-label">
+            CODE SNIPPETS 
+        </p>
+        <ul class="menu-list">
+            <li>
+                <p>Python</p>
+                <Link to="/vim">Mongo DB setup Ubuntu 16.04</Link>
+            </li>
+            <li>
+                <p>MySQL</p>
+                <Link to="/vim">Setting up DB for MySQL</Link>
+            </li>
+        </ul>
+        
         </aside>
         
       </div>
