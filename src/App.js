@@ -19,7 +19,7 @@ class App extends Component {
                   <Menu />
                 </div> 
                 <div className="column">
-                    <Route path="/mmr" component={Mort}/>
+                    <Route exact={true} path="/mmr" component={Mort}/>
                     <Route exact={true} path="/vim" component={Vim}/>
                 </div>
               </div>
