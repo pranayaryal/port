@@ -6,11 +6,14 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <aside class="menu">
-        <p class="menu-label">
+        <aside className="menu">
+        <p className="menu-label">
             May 2018
         </p>
         <ul class="menu-list">
+            <li>
+                <Link to="/mort">Maternal Mortality in India</Link>
+            </li>
             <li>
                 <Link to="/tensorflow">Tensorflow.js Tutorial</Link>
             </li>
@@ -18,19 +21,19 @@ class Menu extends Component {
                 <Link to="/components-vue">Components in Vue</Link>
             </li>
         </ul>
-        <p class="menu-label">
+        <p className="menu-label">
             March 2017
         </p>
-        <ul class="menu-list">
+        <ul className="menu-list">
             <li>
                 <Link to="/vim">Configuring Vim</Link>
             </li>
         </ul>
         <br /><br />
-        <p class="menu-label">
+        <p className="menu-label">
             CODE SNIPPETS 
         </p>
-        <ul class="menu-list">
+        <ul className="menu-list">
             <li>
                 <p>Python</p>
                 <Link to="/vim">Mongo DB setup Ubuntu 16.04</Link>
