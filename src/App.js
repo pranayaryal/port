@@ -19,8 +19,7 @@ class App extends Component {
                   <Menu />
                 </div> 
                 <div className="column">
-                    <Route path="/tensorflow" component={Tensorflow}/>
-                    <Route path="/mort" component={Mort}/>
+                    <Route path="/mmr" component={Mort}/>
                     <Route exact={true} path="/vim" component={Vim}/>
                 </div>
               </div>
