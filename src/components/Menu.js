@@ -2,11 +2,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Menu extends Component {
-  render() {
+const Menu = () => {
     return (
       <div>
         <aside className="menu">
+        <p className="menu-label">September 2019</p>
+        <ul className="menu-list">
+            <li>
+                <Link to="/stripe">Configuring Stripe with React</Link>
+            </li>
+        </ul>
         <p className="menu-label">
             May 2018
         </p>
@@ -23,24 +28,11 @@ class Menu extends Component {
                 <Link to="/vim">Configuring Vim</Link>
             </li>
         </ul>
-        <br /><br />
-        <p className="menu-label">
-            CODE SNIPPETS 
-        </p>
-        <ul className="menu-list">
-            <li>
-                <p>Python</p>
-            </li>
-            <li>
-                <p>MySQL</p>
-            </li>
-        </ul>
         
         </aside>
         
       </div>
     );
   }
-}
 
 export default Menu;

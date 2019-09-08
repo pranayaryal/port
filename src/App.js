@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Hero from './Hero'
-import Menu from './Menu'
+import Hero from './components/Hero'
+import Menu from './components/Menu'
+import Stripe from './components/Stripe'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Tensorflow from './Tensorflow'
-import Vim from './Vim'
-import Mort from './Mort'
+import Vim from './components/Vim'
+import Mort from './components/Mort'
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
         <Router>
           <div>
@@ -21,6 +21,7 @@ class App extends Component {
                 <div className="column">
                     <Route exact={true} path="/mmr" component={Mort}/>
                     <Route exact={true} path="/vim" component={Vim}/>
+                    <Route exact={true} path="/stripe" component={Stripe}/>
                 </div>
               </div>
             </div>
@@ -28,6 +29,5 @@ class App extends Component {
         </Router> 
     );
   }
-}
 
 export default App;
